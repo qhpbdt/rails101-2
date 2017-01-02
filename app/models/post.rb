@@ -4,5 +4,6 @@ class Post < ApplicationRecord
 
   validates :content, presence: true
 
+scpoe :recent, -> { order("created_at DESC")}
 
 end
